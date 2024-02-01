@@ -1,0 +1,89 @@
+body {
+    background-image: url('body_bg.jpg'); /* Replace with the path to your image */
+    background-size: cover; /* Cover the entire page */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Fixed background */
+}
+
+
+.shadow{
+    /*filter: drop-shadow(2px 2px 2px #fff);*/
+
+    border:1px solid #32081f;
+
+}
+
+/* Custom styles for the slider */
+.rc-slider-track {
+    background-color: #fff; /* Change track color */
+}
+
+.rc-slider-handle {
+    border-color: #fff; /* Change handle color */
+    background-color: #00CC96;
+	width:20px;
+	height:20px;
+	margin-top: -8px;
+}
+
+.rc-slider-dot {
+    border-color: #00CC96; /* Change dot color */
+}
+
+.rc-slider-mark-text {
+    color: #fff; /* Change text color of marks */
+}
+
+.sticky-slider {
+    position: sticky;
+    top: 0; /* Adjust this value as needed */
+    z-index: 1000; /* Ensure it's above other content */
+    background-color: rgba(0,0,0,0.7); /* Or set a specific background */
+    padding: 10px 0; /* Optional padding */
+}
+
+
+/* Hide the slider on small screens */
+@media screen and (max-width: 1220px) {
+    .desktop-slider {
+        display: none;
+    }
+}
+
+/* Show the dropdown on small screens */
+.mobile-dropdown {
+    display: none;
+}
+
+@media screen and (max-width: 1220px) {
+    .mobile-dropdown {
+        display: block;
+        color:black;
+    }
+}
+
+/* Custom styles for scrollbar */
+
+::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar thumb */
+    border-radius: 5px; /* Rounded corners on the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the scrollbar thumb on hover */
+}
+
+/* For Firefox */
+* {
+    scrollbar-width: thin; /* 'auto' or 'thin' are the options */
+    scrollbar-color: #888 #f1f1f1; /* thumb and track color */
+}
+
